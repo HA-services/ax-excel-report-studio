@@ -1,0 +1,1448 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* axs_excel_report
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-26 10:52+0000\n"
+"PO-Revision-Date: 2026-11-26 10:52+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/models/excel_template.py:0
+msgid "%s (copy)"
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/wizard/print_wizard.py:0
+msgid "%s Excel file(s) attached."
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/wizard/print_wizard.py:0
+msgid "%s more rows in the file."
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/wizard/print_wizard.py:0
+msgid "%s picture(s) in the sheet."
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/models/excel_template.py:0
+msgid "'%s' is not a valid field path."
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/models/excel_template.py:0
+msgid "'Then' can only follow a relation field (%s)."
+msgstr ""
+
+#. module: axs_excel_report
+#: model_terms:ir.ui.view,arch_db:axs_excel_report.view_axs_excel_template_form
+msgid ""
+"<code>{{ for line in object.order_line }}</code> anywhere in a row repeats the\n"
+"                                        row for each line; use <code>{{ line.price_subtotal }}</code> in that row. End a\n"
+"                                        block of several rows with <code>{{ endfor }}</code>."
+msgstr ""
+
+#. module: axs_excel_report
+#: model_terms:ir.ui.view,arch_db:axs_excel_report.view_axs_excel_template_form
+msgid ""
+"<code>{{ object.image_128 | image:80 }}</code> inserts a picture 80 pixels "
+"high."
+msgstr ""
+
+#. module: axs_excel_report
+#: model_terms:ir.ui.view,arch_db:axs_excel_report.view_axs_excel_template_form
+msgid ""
+"<code>{{ object.name }}</code> a field of the printed record,\n"
+"                                        <code>{{ object.partner_id.email }}</code> a field of a related record."
+msgstr ""
+
+#. module: axs_excel_report
+#: model:ir.model.fields,field_description:axs_excel_report.field_axs_excel_template__accent_color
+msgid "Accent Color"
+msgstr ""
+
+#. module: axs_excel_report
+#: model_terms:ir.ui.view,arch_db:axs_excel_report.view_axs_excel_template_form
+msgid "Access"
+msgstr ""
+
+#. module: axs_excel_report
+#: model:ir.model.fields.selection,name:axs_excel_report.selection__axs_excel_template__menu_location__action
+msgid "Action menu"
+msgstr ""
+
+#. module: axs_excel_report
+#: model:ir.model,name:axs_excel_report.model_ir_actions_actions
+msgid "Actions"
+msgstr ""
+
+#. module: axs_excel_report
+#: model:ir.model.fields,field_description:axs_excel_report.field_axs_excel_template__active
+msgid "Active"
+msgstr ""
+
+#. module: axs_excel_report
+#: model:ir.model.fields,help:axs_excel_report.field_axs_excel_template_line__total
+msgid "Add an Excel SUM below the column."
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/models/excel_template.py:0
+msgid "All printed records"
+msgstr ""
+
+#. module: axs_excel_report
+#: model:ir.model.fields,field_description:axs_excel_report.field_axs_excel_template__group_ids
+msgid "Allowed Groups"
+msgstr ""
+
+#. module: axs_excel_report
+#: model_terms:ir.ui.view,arch_db:axs_excel_report.view_axs_excel_template_form
+#: model_terms:ir.ui.view,arch_db:axs_excel_report.view_axs_excel_template_search
+msgid "Archived"
+msgstr ""
+
+#. module: axs_excel_report
+#: model:ir.model.fields.selection,name:axs_excel_report.selection__axs_excel_print_wizard__output__attach
+msgid "Attach to the record"
+msgstr ""
+
+#. module: axs_excel_report
+#: model:ir.model.fields,field_description:axs_excel_report.field_axs_excel_template__view_types
+msgid "Available In"
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/wizard/gallery.py:0
+msgid "Buyer"
+msgstr ""
+
+#. module: axs_excel_report
+#: model:ir.model.fields,field_description:axs_excel_report.field_axs_excel_print_wizard__can_email
+msgid "Can Email"
+msgstr ""
+
+#. module: axs_excel_report
+#: model_terms:ir.ui.view,arch_db:axs_excel_report.view_axs_excel_gallery_wizard_form
+#: model_terms:ir.ui.view,arch_db:axs_excel_report.view_axs_excel_print_wizard_form
+msgid "Cancel"
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/wizard/gallery.py:0
+msgid "Category"
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/wizard/gallery.py:0
+msgid "City"
+msgstr ""
+
+#. module: axs_excel_report
+#: model:ir.model.fields,field_description:axs_excel_report.field_axs_excel_template__table_line_ids
+#: model_terms:ir.ui.view,arch_db:axs_excel_report.view_axs_excel_template_form
+msgid "Columns"
+msgstr ""
+
+#. module: axs_excel_report
+#: model:ir.model.fields,field_description:axs_excel_report.field_axs_excel_template__company_ids
+msgid "Companies"
+msgstr ""
+
+#. module: axs_excel_report
+#: model:ir.model.fields,field_description:axs_excel_report.field_axs_excel_template__show_company
+msgid "Company Header"
+msgstr ""
+
+#. module: axs_excel_report
+#: model:ir.model.fields,field_description:axs_excel_report.field_axs_excel_template__show_logo
+msgid "Company Logo"
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/models/excel_template.py:0
+msgid "Company name and logo"
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/wizard/gallery.py:0
+msgid "Contact"
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/wizard/gallery.py:0
+msgid "Contact List (Excel)"
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/wizard/gallery.py:0
+msgid "Contact Sheet (Excel)"
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/wizard/gallery.py:0
+msgid "Contacts"
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/wizard/gallery.py:0
+msgid "Cost"
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/wizard/gallery.py:0
+msgid "Country"
+msgstr ""
+
+#. module: axs_excel_report
+#: model_terms:ir.ui.view,arch_db:axs_excel_report.view_axs_excel_gallery_wizard_form
+msgid "Create Report"
+msgstr ""
+
+#. module: axs_excel_report
+#: model:ir.model,name:axs_excel_report.model_axs_excel_gallery_wizard
+msgid "Create an Excel Report from the Gallery"
+msgstr ""
+
+#. module: axs_excel_report
+#: model_terms:ir.actions.act_window,help:axs_excel_report.action_axs_excel_template
+msgid "Create your first Excel report"
+msgstr ""
+
+#. module: axs_excel_report
+#: model:ir.model.fields,field_description:axs_excel_report.field_axs_excel_gallery_wizard__create_uid
+#: model:ir.model.fields,field_description:axs_excel_report.field_axs_excel_print_wizard__create_uid
+#: model:ir.model.fields,field_description:axs_excel_report.field_axs_excel_template__create_uid
+#: model:ir.model.fields,field_description:axs_excel_report.field_axs_excel_template_line__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: axs_excel_report
+#: model:ir.model.fields,field_description:axs_excel_report.field_axs_excel_gallery_wizard__create_date
+#: model:ir.model.fields,field_description:axs_excel_report.field_axs_excel_print_wizard__create_date
+#: model:ir.model.fields,field_description:axs_excel_report.field_axs_excel_template__create_date
+#: model:ir.model.fields,field_description:axs_excel_report.field_axs_excel_template_line__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: axs_excel_report
+#: model:res.groups,comment:axs_excel_report.group_excel_manager
+msgid "Creates and designs Excel report templates."
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/wizard/gallery.py:0
+msgid "Currency"
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/models/excel_template.py:0
+msgid "Current user"
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/wizard/gallery.py:0
+msgid "Customer"
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/wizard/gallery.py:0
+msgid "Customer Reference"
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/wizard/gallery.py:0
+msgid "Date"
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/wizard/gallery.py:0
+msgid "Demand"
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/wizard/gallery.py:0
+#: model:ir.model.fields,field_description:axs_excel_report.field_axs_excel_template__description
+msgid "Description"
+msgstr ""
+
+#. module: axs_excel_report
+#: model:ir.model.fields.selection,name:axs_excel_report.selection__axs_excel_template__template_type__designer
+#: model_terms:ir.ui.view,arch_db:axs_excel_report.view_axs_excel_template_search
+msgid "Designer"
+msgstr ""
+
+#. module: axs_excel_report
+#: model:ir.model.fields,help:axs_excel_report.field_axs_excel_template__template_type
+msgid ""
+"Designer: choose the fields, the workbook is built for you.\n"
+"Excel File: upload your own workbook with placeholders."
+msgstr ""
+
+#. module: axs_excel_report
+#: model:ir.model.fields,field_description:axs_excel_report.field_axs_excel_gallery_wizard__display_name
+#: model:ir.model.fields,field_description:axs_excel_report.field_axs_excel_print_wizard__display_name
+#: model:ir.model.fields,field_description:axs_excel_report.field_axs_excel_template__display_name
+#: model:ir.model.fields,field_description:axs_excel_report.field_axs_excel_template_line__display_name
+#: model:ir.model.fields,field_description:axs_excel_report.field_ir_actions_actions__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: axs_excel_report
+#: model:ir.model.fields.selection,name:axs_excel_report.selection__axs_excel_template__layout__record
+msgid "Document (one record with its lines)"
+msgstr ""
+
+#. module: axs_excel_report
+#: model:ir.model.fields,help:axs_excel_report.field_axs_excel_template__layout
+msgid ""
+"Document: header fields and a table of lines, one sheet per record.\n"
+"Table: one row per selected record, for list exports."
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/wizard/gallery.py:0
+msgid "Done"
+msgstr ""
+
+#. module: axs_excel_report
+#: model:ir.model.fields.selection,name:axs_excel_report.selection__axs_excel_print_wizard__output__download
+msgid "Download"
+msgstr ""
+
+#. module: axs_excel_report
+#: model_terms:ir.ui.view,arch_db:axs_excel_report.view_axs_excel_template_form
+msgid "Download Template"
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/wizard/gallery.py:0
+msgid "Due Date"
+msgstr ""
+
+#. module: axs_excel_report
+#: model_terms:ir.ui.view,arch_db:axs_excel_report.view_axs_excel_template_form
+msgid "Edit in Excel"
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/wizard/gallery.py:0
+msgid "Email"
+msgstr ""
+
+#. module: axs_excel_report
+#: model_terms:ir.ui.view,arch_db:axs_excel_report.view_axs_excel_print_wizard_form
+msgid "Email is available for one record of a document with a chatter."
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/wizard/print_wizard.py:0
+msgid "Email is available for one record of a model with a chatter."
+msgstr ""
+
+#. module: axs_excel_report
+#: model:ir.model.fields.selection,name:axs_excel_report.selection__axs_excel_template__template_type__file
+#: model_terms:ir.ui.view,arch_db:axs_excel_report.view_axs_excel_template_form
+#: model_terms:ir.ui.view,arch_db:axs_excel_report.view_axs_excel_template_search
+msgid "Excel File"
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/wizard/print_wizard.py:0
+#: model_terms:ir.ui.view,arch_db:axs_excel_report.view_axs_excel_print_wizard_form
+#: model_terms:ir.ui.view,arch_db:axs_excel_report.view_axs_excel_template_form
+msgid "Excel Report"
+msgstr ""
+
+#. module: axs_excel_report
+#: model:ir.model,name:axs_excel_report.model_axs_excel_template_line
+msgid "Excel Report Field"
+msgstr ""
+
+#. module: axs_excel_report
+#: model:res.groups,name:axs_excel_report.group_excel_manager
+msgid "Excel Report Manager"
+msgstr ""
+
+#. module: axs_excel_report
+#: model:ir.module.category,name:axs_excel_report.module_category_excel_report
+#: model:res.groups.privilege,name:axs_excel_report.privilege_excel_report
+msgid "Excel Report Studio"
+msgstr ""
+
+#. module: axs_excel_report
+#: model:ir.actions.server,name:axs_excel_report.cron_gc_temporary_files_ir_actions_server
+msgid "Excel Report Studio: remove temporary downloads"
+msgstr ""
+
+#. module: axs_excel_report
+#: model:ir.model,name:axs_excel_report.model_axs_excel_template
+msgid "Excel Report Template"
+msgstr ""
+
+#. module: axs_excel_report
+#: model:ir.actions.act_window,name:axs_excel_report.action_axs_excel_template
+#: model:ir.ui.menu,name:axs_excel_report.menu_excel_root
+#: model_terms:ir.ui.view,arch_db:axs_excel_report.view_axs_excel_template_tree
+msgid "Excel Reports"
+msgstr ""
+
+#. module: axs_excel_report
+#: model:ir.model.fields,field_description:axs_excel_report.field_axs_excel_template__template_file
+msgid "Excel Template"
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/wizard/gallery.py:0
+msgid "Expiration"
+msgstr ""
+
+#. module: axs_excel_report
+#: model:ir.model.fields,field_description:axs_excel_report.field_axs_excel_template_line__field_id
+msgid "Field"
+msgstr ""
+
+#. module: axs_excel_report
+#: model:ir.model.fields,field_description:axs_excel_report.field_axs_excel_template__header_line_ids
+#: model_terms:ir.ui.view,arch_db:axs_excel_report.view_axs_excel_template_form
+msgid "Fields"
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/models/excel_template.py:0
+msgid "Fields of %s"
+msgstr ""
+
+#. module: axs_excel_report
+#: model:ir.model.fields,field_description:axs_excel_report.field_axs_excel_template__template_filename
+msgid "File Name"
+msgstr ""
+
+#. module: axs_excel_report
+#: model:ir.model.fields,field_description:axs_excel_report.field_axs_excel_template__footer
+msgid "Footer Note"
+msgstr ""
+
+#. module: axs_excel_report
+#: model:ir.model.fields,help:axs_excel_report.field_axs_excel_template_line__sub_path
+msgid ""
+"For a relation, the field of the related record, for example 'email' or "
+"'country_id.code'. Leave empty to show its name."
+msgstr ""
+
+#. module: axs_excel_report
+#: model:ir.model.fields.selection,name:axs_excel_report.selection__axs_excel_template__view_types__list,form
+msgid "Form and list views"
+msgstr ""
+
+#. module: axs_excel_report
+#: model:ir.model.fields.selection,name:axs_excel_report.selection__axs_excel_template__view_types__form
+msgid "Form view only"
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/models/excel_template.py:0
+msgid "Formatting"
+msgstr ""
+
+#. module: axs_excel_report
+#: model_terms:ir.ui.view,arch_db:axs_excel_report.view_axs_excel_template_form
+msgid ""
+"Formulas such as <code>=SUM(F12:F12)</code> under a repeated row grow with "
+"it."
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/wizard/print_wizard.py:0
+msgid "Formulas, shown in grey, are calculated when the file opens."
+msgstr ""
+
+#. module: axs_excel_report
+#: model:ir.ui.menu,name:axs_excel_report.menu_excel_gallery
+msgid "Gallery"
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/models/excel_template.py:0
+msgid "General"
+msgstr ""
+
+#. module: axs_excel_report
+#: model_terms:ir.ui.view,arch_db:axs_excel_report.view_axs_excel_print_wizard_form
+msgid "Generate"
+msgstr ""
+
+#. module: axs_excel_report
+#: model:ir.model.fields.selection,name:axs_excel_report.selection__axs_excel_template_line__section__header
+msgid "Header"
+msgstr ""
+
+#. module: axs_excel_report
+#: model:ir.model.fields,field_description:axs_excel_report.field_axs_excel_gallery_wizard__id
+#: model:ir.model.fields,field_description:axs_excel_report.field_axs_excel_print_wizard__id
+#: model:ir.model.fields,field_description:axs_excel_report.field_axs_excel_template__id
+#: model:ir.model.fields,field_description:axs_excel_report.field_axs_excel_template_line__id
+#: model:ir.model.fields,field_description:axs_excel_report.field_ir_actions_actions__id
+msgid "ID"
+msgstr ""
+
+#. module: axs_excel_report
+#: model_terms:ir.ui.view,arch_db:axs_excel_report.view_axs_excel_template_form
+msgid "Internal notes"
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/wizard/gallery.py:0
+msgid "Invoice (Excel)"
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/wizard/gallery.py:0
+msgid "Invoice Date"
+msgstr ""
+
+#. module: axs_excel_report
+#: model:ir.model.fields,field_description:axs_excel_report.field_axs_excel_template_line__is_image
+msgid "Is Image"
+msgstr ""
+
+#. module: axs_excel_report
+#: model:ir.model.fields,field_description:axs_excel_report.field_axs_excel_template_line__is_numeric
+msgid "Is Numeric"
+msgstr ""
+
+#. module: axs_excel_report
+#: model:ir.model.fields,help:axs_excel_report.field_axs_excel_print_wizard__res_ids
+msgid "JSON list of the record ids"
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/wizard/gallery.py:0
+msgid "Job Position"
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/wizard/gallery.py:0
+#: model:ir.model.fields,field_description:axs_excel_report.field_axs_excel_template_line__name
+msgid "Label"
+msgstr ""
+
+#. module: axs_excel_report
+#: model:ir.model.fields,field_description:axs_excel_report.field_axs_excel_gallery_wizard__write_uid
+#: model:ir.model.fields,field_description:axs_excel_report.field_axs_excel_print_wizard__write_uid
+#: model:ir.model.fields,field_description:axs_excel_report.field_axs_excel_template__write_uid
+#: model:ir.model.fields,field_description:axs_excel_report.field_axs_excel_template_line__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: axs_excel_report
+#: model:ir.model.fields,field_description:axs_excel_report.field_axs_excel_gallery_wizard__write_date
+#: model:ir.model.fields,field_description:axs_excel_report.field_axs_excel_print_wizard__write_date
+#: model:ir.model.fields,field_description:axs_excel_report.field_axs_excel_template__write_date
+#: model:ir.model.fields,field_description:axs_excel_report.field_axs_excel_template_line__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: axs_excel_report
+#: model:ir.model.fields,field_description:axs_excel_report.field_axs_excel_template__layout
+#: model_terms:ir.ui.view,arch_db:axs_excel_report.view_axs_excel_template_form
+msgid "Layout"
+msgstr ""
+
+#. module: axs_excel_report
+#: model:ir.model.fields,field_description:axs_excel_report.field_axs_excel_template_line__model_id
+msgid "Line Model"
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/models/excel_template.py:0
+msgid "Line number in a loop"
+msgstr ""
+
+#. module: axs_excel_report
+#: model:ir.model.fields,field_description:axs_excel_report.field_axs_excel_template__table_field_id
+msgid "Lines"
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/models/excel_template.py:0
+msgid "Lines (loops)"
+msgstr ""
+
+#. module: axs_excel_report
+#: model:ir.model.fields,field_description:axs_excel_report.field_axs_excel_template__table_model_id
+msgid "Lines Model"
+msgstr ""
+
+#. module: axs_excel_report
+#: model:ir.model.fields.selection,name:axs_excel_report.selection__axs_excel_template__view_types__list
+msgid "List view only"
+msgstr ""
+
+#. module: axs_excel_report
+#: model_terms:ir.ui.view,arch_db:axs_excel_report.view_axs_excel_template_form
+msgid "Menu"
+msgstr ""
+
+#. module: axs_excel_report
+#: model:ir.model.fields,field_description:axs_excel_report.field_axs_excel_template__action_id
+msgid "Menu Action"
+msgstr ""
+
+#. module: axs_excel_report
+#: model:ir.model.fields,field_description:axs_excel_report.field_axs_excel_template__model_id
+#: model_terms:ir.ui.view,arch_db:axs_excel_report.view_axs_excel_template_search
+msgid "Model"
+msgstr ""
+
+#. module: axs_excel_report
+#: model:ir.model.fields,field_description:axs_excel_report.field_axs_excel_template__model_name
+msgid "Model Name"
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/wizard/gallery.py:0
+msgid "Name"
+msgstr ""
+
+#. module: axs_excel_report
+#: model:ir.model.fields,help:axs_excel_report.field_axs_excel_template__output_name
+msgid ""
+"Name of the downloaded file, placeholders allowed. Example: Quotation {{ "
+"object.name }}"
+msgstr ""
+
+#. module: axs_excel_report
+#: model:ir.model.fields.selection,name:axs_excel_report.selection__axs_excel_template__menu_location__none
+msgid "No menu entry"
+msgstr ""
+
+#. module: axs_excel_report
+#: model:ir.model.fields.selection,name:axs_excel_report.selection__axs_excel_template__multi_mode__zip
+msgid "One file per record (zip)"
+msgstr ""
+
+#. module: axs_excel_report
+#: model:ir.model.fields.selection,name:axs_excel_report.selection__axs_excel_template__multi_mode__sheets
+msgid "One sheet per record"
+msgstr ""
+
+#. module: axs_excel_report
+#: model:ir.model.fields.selection,name:axs_excel_report.selection__axs_excel_template__multi_mode__single
+msgid "One workbook for all records (records loop)"
+msgstr ""
+
+#. module: axs_excel_report
+#: model:ir.model.fields,field_description:axs_excel_report.field_axs_excel_template__ask_options
+msgid "Open Options Dialog"
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/wizard/gallery.py:0
+msgid "Operation"
+msgstr ""
+
+#. module: axs_excel_report
+#: model_terms:ir.ui.view,arch_db:axs_excel_report.view_axs_excel_template_form
+msgid "Optional note at the end of the sheet"
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/wizard/gallery.py:0
+msgid "Order"
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/wizard/gallery.py:0
+msgid "Order Date"
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/wizard/gallery.py:0
+msgid "Order Deadline"
+msgstr ""
+
+#. module: axs_excel_report
+#: model:ir.model.fields,field_description:axs_excel_report.field_axs_excel_print_wizard__output
+msgid "Output"
+msgstr ""
+
+#. module: axs_excel_report
+#: model:ir.model.fields,field_description:axs_excel_report.field_axs_excel_template__output_name
+msgid "Output File Name"
+msgstr ""
+
+#. module: axs_excel_report
+#: model:ir.model.fields,field_description:axs_excel_report.field_axs_excel_template_line__path
+msgid "Path"
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/wizard/gallery.py:0
+msgid "Payment Reference"
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/wizard/gallery.py:0
+msgid "Payment Terms"
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/wizard/gallery.py:0
+msgid "Phone"
+msgstr ""
+
+#. module: axs_excel_report
+#: model_terms:ir.actions.act_window,help:axs_excel_report.action_axs_excel_template
+msgid ""
+"Pick ready-made reports in the Gallery, design one by choosing fields, or upload your own Excel\n"
+"                workbook with placeholders. Reports appear in the Print menu of the records."
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/wizard/gallery.py:0
+msgid "Picture"
+msgstr ""
+
+#. module: axs_excel_report
+#: model:ir.model.fields,field_description:axs_excel_report.field_axs_excel_template__placeholder_help
+msgid "Placeholder Help"
+msgstr ""
+
+#. module: axs_excel_report
+#: model_terms:ir.ui.view,arch_db:axs_excel_report.view_axs_excel_template_form
+msgid "Placeholders"
+msgstr ""
+
+#. module: axs_excel_report
+#: model:ir.model.fields,field_description:axs_excel_report.field_axs_excel_print_wizard__preview
+msgid "Preview"
+msgstr ""
+
+#. module: axs_excel_report
+#: model_terms:ir.ui.view,arch_db:axs_excel_report.view_axs_excel_print_wizard_form
+msgid "Preview (first record)"
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/wizard/gallery.py:0
+msgid "Price List"
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/wizard/gallery.py:0
+msgid "Prices are expressed without taxes."
+msgstr ""
+
+#. module: axs_excel_report
+#: model:ir.model.fields,field_description:axs_excel_report.field_axs_excel_template__print_count
+msgid "Print Count"
+msgstr ""
+
+#. module: axs_excel_report
+#: model:ir.model,name:axs_excel_report.model_axs_excel_print_wizard
+msgid "Print an Excel Report"
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/models/excel_template.py:0
+msgid "Print date"
+msgstr ""
+
+#. module: axs_excel_report
+#: model:ir.model.fields.selection,name:axs_excel_report.selection__axs_excel_template__menu_location__print
+msgid "Print menu"
+msgstr ""
+
+#. module: axs_excel_report
+#: model_terms:ir.ui.view,arch_db:axs_excel_report.view_axs_excel_template_form
+msgid "Printed"
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/models/excel_template.py:0
+msgid "Printed on {{ now }} by {{ user.name }}"
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/wizard/gallery.py:0
+msgid "Product"
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/wizard/gallery.py:0
+msgid "Product Price List (Excel)"
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/wizard/gallery.py:0
+msgid "Purchase Order (Excel)"
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/wizard/gallery.py:0
+msgid "Quantity"
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/wizard/gallery.py:0
+msgid "Quotation (Excel)"
+msgstr ""
+
+#. module: axs_excel_report
+#: model_terms:ir.ui.view,arch_db:axs_excel_report.view_axs_excel_gallery_wizard_form
+msgid ""
+"Ready-made reports for the apps installed in this database. You can change\n"
+"                    everything after creating them."
+msgstr ""
+
+#. module: axs_excel_report
+#: model:ir.model.fields,field_description:axs_excel_report.field_axs_excel_print_wizard__record_count
+msgid "Record Count"
+msgstr ""
+
+#. module: axs_excel_report
+#: model_terms:ir.ui.view,arch_db:axs_excel_report.view_axs_excel_print_wizard_form
+msgid "Records"
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/models/excel_template.py:0
+msgid "Records: {{ count }}, {{ today }}"
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/wizard/gallery.py:0
+msgid "Reference"
+msgstr ""
+
+#. module: axs_excel_report
+#: model:ir.model.fields,field_description:axs_excel_report.field_axs_excel_gallery_wizard__template
+#: model:ir.model.fields,field_description:axs_excel_report.field_axs_excel_print_wizard__template_id
+#: model_terms:ir.ui.view,arch_db:axs_excel_report.view_axs_excel_template_form
+msgid "Report"
+msgstr ""
+
+#. module: axs_excel_report
+#: model:ir.actions.act_window,name:axs_excel_report.action_axs_excel_gallery_wizard
+#: model_terms:ir.ui.view,arch_db:axs_excel_report.view_axs_excel_gallery_wizard_form
+msgid "Report Gallery"
+msgstr ""
+
+#. module: axs_excel_report
+#: model:ir.model.fields,field_description:axs_excel_report.field_axs_excel_template__name
+msgid "Report Name"
+msgstr ""
+
+#. module: axs_excel_report
+#: model:ir.ui.menu,name:axs_excel_report.menu_excel_templates
+msgid "Reports"
+msgstr ""
+
+#. module: axs_excel_report
+#: model:ir.model.fields,field_description:axs_excel_report.field_axs_excel_print_wizard__res_ids
+msgid "Res"
+msgstr ""
+
+#. module: axs_excel_report
+#: model:ir.model.fields,field_description:axs_excel_report.field_axs_excel_print_wizard__res_model
+msgid "Res Model"
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/wizard/gallery.py:0
+msgid "Sales Orders"
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/wizard/gallery.py:0
+msgid "Sales Orders List (Excel)"
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/wizard/gallery.py:0
+msgid "Sales Price"
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/wizard/gallery.py:0
+msgid "Salesperson"
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/wizard/gallery.py:0
+msgid "Scheduled Date"
+msgstr ""
+
+#. module: axs_excel_report
+#: model:ir.model.fields,field_description:axs_excel_report.field_axs_excel_template_line__section
+msgid "Section"
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/models/excel_template.py:0
+msgid "Select at least one record."
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/models/excel_template.py:0
+msgid "Select at most %s records for one Excel report."
+msgstr ""
+
+#. module: axs_excel_report
+#: model:ir.model.fields.selection,name:axs_excel_report.selection__axs_excel_print_wizard__output__email
+msgid "Send by email"
+msgstr ""
+
+#. module: axs_excel_report
+#: model:ir.model.fields,field_description:axs_excel_report.field_axs_excel_template__sequence
+#: model:ir.model.fields,field_description:axs_excel_report.field_axs_excel_template_line__sequence
+msgid "Sequence"
+msgstr ""
+
+#. module: axs_excel_report
+#: model:ir.model.fields,field_description:axs_excel_report.field_axs_excel_template__multi_mode
+msgid "Several Records"
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/models/excel_template.py:0
+msgid "Several rows per line"
+msgstr ""
+
+#. module: axs_excel_report
+#: model:ir.model.fields,field_description:axs_excel_report.field_axs_excel_template__menu_location
+msgid "Show In"
+msgstr ""
+
+#. module: axs_excel_report
+#: model:ir.model.fields,help:axs_excel_report.field_axs_excel_template__ask_options
+msgid ""
+"Show a dialog with a preview and the download, attach and email choices "
+"instead of downloading the file directly."
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/wizard/gallery.py:0
+msgid "Source Document"
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/wizard/gallery.py:0
+msgid "Status"
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/wizard/gallery.py:0
+msgid "Street"
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/wizard/gallery.py:0
+msgid "Subtotal"
+msgstr ""
+
+#. module: axs_excel_report
+#: model:ir.model.fields.selection,name:axs_excel_report.selection__axs_excel_template_line__section__table
+msgid "Table"
+msgstr ""
+
+#. module: axs_excel_report
+#: model:ir.model.fields.selection,name:axs_excel_report.selection__axs_excel_template__layout__list
+msgid "Table of the selected records"
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/wizard/gallery.py:0
+msgid "Tax ID"
+msgstr ""
+
+#. module: axs_excel_report
+#: model:ir.model.fields,field_description:axs_excel_report.field_axs_excel_template_line__template_id
+msgid "Template"
+msgstr ""
+
+#. module: axs_excel_report
+#: model:ir.model.fields,field_description:axs_excel_report.field_axs_excel_template__template_type
+msgid "Template Source"
+msgstr ""
+
+#. module: axs_excel_report
+#: model_terms:ir.ui.view,arch_db:axs_excel_report.view_axs_excel_template_form
+msgid "Test Print"
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/models/excel_template.py:0
+msgid "The Excel template cannot be opened: %s"
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/models/excel_template.py:0
+msgid "The Excel template of '%s' has an error: %s"
+msgstr ""
+
+#. module: axs_excel_report
+#: model_terms:ir.ui.view,arch_db:axs_excel_report.view_axs_excel_template_form
+msgid ""
+"The Placeholders tab lists every field of the model. Use Download Template to start\n"
+"                                    from the current file or from a designer layout."
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/models/excel_template.py:0
+msgid "The Python library openpyxl is required to build Excel reports."
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/models/excel_template.py:0
+msgid "The accent color must look like #1b264f."
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/models/excel_template.py:0
+msgid "The field '%s' does not exist (column %s)."
+msgstr ""
+
+#. module: axs_excel_report
+#: model_terms:ir.ui.view,arch_db:axs_excel_report.view_axs_excel_template_form
+msgid ""
+"The layout becomes an Excel file that you can download, change in Excel and "
+"upload again. Continue?"
+msgstr ""
+
+#. module: axs_excel_report
+#: model:ir.model.fields,help:axs_excel_report.field_axs_excel_template__table_field_id
+msgid "The lines shown as a table, for example the order lines."
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/models/excel_template.py:0
+#: code:addons/axs_excel_report/wizard/print_wizard.py:0
+msgid "The model %s is not available."
+msgstr ""
+
+#. module: axs_excel_report
+#: model:ir.model.fields,help:axs_excel_report.field_axs_excel_template__company_ids
+msgid ""
+"The report is offered in these companies only. Leave empty for all "
+"companies."
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/wizard/print_wizard.py:0
+msgid "The selected records do not exist anymore."
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/models/excel_template.py:0
+msgid "The template must be an Excel workbook (.xlsx)."
+msgstr ""
+
+#. module: axs_excel_report
+#: model:ir.model.fields,field_description:axs_excel_report.field_axs_excel_template_line__sub_path
+msgid "Then"
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/models/excel_template.py:0
+msgid "There is no %s record to print yet."
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/models/excel_template.py:0
+msgid "This report is made for %s records."
+msgstr ""
+
+#. module: axs_excel_report
+#: model:ir.model.fields,field_description:axs_excel_report.field_axs_excel_template__title
+msgid "Title"
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/models/excel_template.py:0
+#: code:addons/axs_excel_report/wizard/gallery.py:0
+#: model:ir.model.fields,field_description:axs_excel_report.field_axs_excel_template_line__total
+msgid "Total"
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/models/excel_template.py:0
+msgid "Totals"
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/models/excel_template.py:0
+msgid "Totals are only possible on number columns (%s)."
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/wizard/gallery.py:0
+msgid "Transfer Sheet (Excel)"
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/wizard/gallery.py:0
+msgid "Unit"
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/wizard/gallery.py:0
+msgid "Unit Price"
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/wizard/gallery.py:0
+msgid "Untaxed"
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/models/excel_template.py:0
+msgid "Upload an Excel template for '%s' first."
+msgstr ""
+
+#. module: axs_excel_report
+#: model:ir.model.fields,help:axs_excel_report.field_axs_excel_template__group_ids
+msgid ""
+"Users of these groups can print the report. Leave empty for every user who "
+"can read the records."
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/wizard/gallery.py:0
+msgid "Vendor"
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/wizard/gallery.py:0
+msgid "Vendor Reference"
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/wizard/gallery.py:0
+msgid "Website"
+msgstr ""
+
+#. module: axs_excel_report
+#: model:ir.model.fields,help:axs_excel_report.field_axs_excel_template__multi_mode
+msgid "What happens when several records are selected in a list."
+msgstr ""
+
+#. module: axs_excel_report
+#: model_terms:ir.ui.view,arch_db:axs_excel_report.view_axs_excel_template_form
+msgid ""
+"Write placeholders in the cells of your workbook, then upload it. Each cell keeps its\n"
+"                                    font, borders, colors and number format."
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/models/excel_template.py:0
+msgid "You are not allowed to print '%s'."
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/models/excel_template.py:0
+msgid "You cannot read %s records."
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/wizard/gallery.py:0
+msgid "amount_untaxed"
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/wizard/gallery.py:0
+msgid "categ_id"
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/wizard/gallery.py:0
+msgid "city"
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/wizard/gallery.py:0
+msgid "client_order_ref"
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/wizard/gallery.py:0
+msgid "country_id"
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/wizard/gallery.py:0
+msgid "currency_id"
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/wizard/gallery.py:0
+msgid "date_order"
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/wizard/gallery.py:0
+msgid "default_code"
+msgstr ""
+
+#. module: axs_excel_report
+#: model_terms:ir.ui.view,arch_db:axs_excel_report.view_axs_excel_template_form
+msgid "e.g. Quotation (Excel)"
+msgstr ""
+
+#. module: axs_excel_report
+#: model_terms:ir.ui.view,arch_db:axs_excel_report.view_axs_excel_template_form
+msgid "e.g. default_code"
+msgstr ""
+
+#. module: axs_excel_report
+#: model_terms:ir.ui.view,arch_db:axs_excel_report.view_axs_excel_template_form
+msgid "e.g. email"
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/wizard/gallery.py:0
+msgid "email"
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/wizard/gallery.py:0
+msgid "image_128"
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/wizard/gallery.py:0
+msgid "invoice_date"
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/wizard/gallery.py:0
+msgid "invoice_date_due"
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/wizard/gallery.py:0
+msgid "list_price"
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/wizard/gallery.py:0
+msgid "name"
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/wizard/gallery.py:0
+msgid "origin"
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/wizard/gallery.py:0
+msgid "partner_id"
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/wizard/gallery.py:0
+msgid "partner_ref"
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/wizard/gallery.py:0
+msgid "payment_reference"
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/wizard/gallery.py:0
+msgid "payment_term_id"
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/wizard/gallery.py:0
+msgid "phone"
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/wizard/gallery.py:0
+msgid "picking_type_id"
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/wizard/gallery.py:0
+msgid "product_id"
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/wizard/gallery.py:0
+msgid "scheduled_date"
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/wizard/gallery.py:0
+msgid "standard_price"
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/wizard/gallery.py:0
+msgid "state"
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/wizard/gallery.py:0
+msgid "street"
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/wizard/gallery.py:0
+msgid "user_id"
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/wizard/gallery.py:0
+msgid "validity_date"
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/wizard/gallery.py:0
+msgid "vat"
+msgstr ""
+
+#. module: axs_excel_report
+#. odoo-python
+#: code:addons/axs_excel_report/wizard/gallery.py:0
+msgid "website"
+msgstr ""
