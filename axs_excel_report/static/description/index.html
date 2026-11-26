@@ -1,0 +1,123 @@
+<section class="container" style="max-width:1100px;margin:0 auto;font-family:Inter,Roboto,Arial,sans-serif;color:#1b264f">
+
+  <div style="text-align:center;padding:24px 12px 8px">
+    <p style="color:#e8875b;font-weight:700;letter-spacing:.08em;margin:0">AXSYNC</p>
+    <h1 style="font-size:40px;font-weight:800;margin:6px 0 10px">Excel Report Studio</h1>
+    <p style="font-size:20px;color:#495057;margin:0 auto;max-width:820px">
+      Excel documents for any Odoo record or list. Design them by picking fields, or bring your own Excel layout
+      with placeholders, and print them from the Print menu.
+    </p>
+    <p style="margin-top:16px">
+      <span style="display:inline-block;background:#eef1f8;border-radius:16px;padding:6px 14px;margin:4px">Odoo 16</span>
+      <span style="display:inline-block;background:#eef1f8;border-radius:16px;padding:6px 14px;margin:4px">Odoo 17</span>
+      <span style="display:inline-block;background:#eef1f8;border-radius:16px;padding:6px 14px;margin:4px">Odoo 18</span>
+      <span style="display:inline-block;background:#eef1f8;border-radius:16px;padding:6px 14px;margin:4px">Odoo 19</span>
+      <span style="display:inline-block;background:#eef1f8;border-radius:16px;padding:6px 14px;margin:4px">Odoo 20</span>
+    </p>
+  </div>
+
+  <div style="padding:8px 12px 24px">
+    <img src="screenshots/07_options_dialog.png" alt="Printing a sales order in Excel with a preview" style="width:100%;border:1px solid #dee2e6;border-radius:10px;box-shadow:0 8px 24px rgba(27,38,79,.12)"/>
+  </div>
+
+  <div style="padding:8px 12px">
+    <h2 style="font-weight:800">The spreadsheet your customer asked for, straight from Odoo</h2>
+    <p style="font-size:16px;line-height:1.7">
+      An export gives raw columns. Your accountant, your warehouse and your customers want a document: a header,
+      the lines, totals that add up, sometimes product pictures, and the layout they already know. Excel Report
+      Studio fills that document from Odoo. Build it in a designer, or design it in Excel and type placeholders
+      such as <code>{{ object.partner_id.name }}</code> where the values belong. The report then sits in the Print
+      menu, next to your PDF reports, for the users allowed to print it.
+    </p>
+  </div>
+
+  <div style="display:flex;flex-wrap:wrap;gap:16px;padding:8px 12px">
+    <div style="flex:1 1 300px;background:#f7f8fc;border-radius:10px;padding:18px">
+      <h4 style="font-weight:700">No-code designer</h4>
+      <p>Pick header fields, a table of lines and totals. The styled workbook with your logo is built for you.</p>
+    </div>
+    <div style="flex:1 1 300px;background:#f7f8fc;border-radius:10px;padding:18px">
+      <h4 style="font-weight:700">Your own Excel files</h4>
+      <p>Upload any .xlsx with placeholders. Colors, merged cells, formulas, charts and print settings are kept.</p>
+    </div>
+    <div style="flex:1 1 300px;background:#f7f8fc;border-radius:10px;padding:18px">
+      <h4 style="font-weight:700">Lines, loops and totals</h4>
+      <p>Repeat a row or a block of rows per line or per record. Formulas, charts and formats grow with the lines.</p>
+    </div>
+    <div style="flex:1 1 300px;background:#f7f8fc;border-radius:10px;padding:18px">
+      <h4 style="font-weight:700">Forms and lists</h4>
+      <p>Print one record or a selection: one sheet per record, one file per record in a zip, or one workbook.</p>
+    </div>
+    <div style="flex:1 1 300px;background:#f7f8fc;border-radius:10px;padding:18px">
+      <h4 style="font-weight:700">Download, attach, email</h4>
+      <p>An optional dialog previews the result and attaches the file to the record or opens the email composer.</p>
+    </div>
+    <div style="flex:1 1 300px;background:#f7f8fc;border-radius:10px;padding:18px">
+      <h4 style="font-weight:700">Companies and groups</h4>
+      <p>Offer each report to some companies or user groups only. Printing follows the user's access rights.</p>
+    </div>
+  </div>
+
+  <div style="padding:24px 12px 8px">
+    <h2 style="font-weight:800">Designer reports</h2>
+    <p style="font-size:16px;line-height:1.7">Choose the model, the fields and the columns. Related fields, totals, title, footer and accent color included.</p>
+    <img src="screenshots/02_designer.png" alt="Report designer" style="width:100%;border:1px solid #dee2e6;border-radius:10px"/>
+    <img src="screenshots/09_output_quotation.png" alt="Quotation produced by the designer" style="width:100%;max-width:760px;display:block;margin:16px auto;border:1px solid #dee2e6;border-radius:10px"/>
+  </div>
+
+  <div style="padding:24px 12px 8px">
+    <h2 style="font-weight:800">Your layout, your formulas</h2>
+    <p style="font-size:16px;line-height:1.7">
+      Type <code>{{ for line in object.order_line }}</code> in the first cell of a row and it repeats for every
+      line. <code>=SUM(F12:F12)</code> below it becomes the sum of all lines, and the product picture of each line
+      lands in its own row.
+    </p>
+    <img src="screenshots/10_output_custom.png" alt="Custom Excel order confirmation with pictures and totals" style="width:100%;max-width:760px;display:block;margin:0 auto;border:1px solid #dee2e6;border-radius:10px"/>
+  </div>
+
+  <div style="padding:24px 12px 8px">
+    <h2 style="font-weight:800">Charts that follow the data</h2>
+    <p style="font-size:16px;line-height:1.7">A chart over the repeated row shows every printed record. Conditional formats, validations, filters and print areas follow too.</p>
+    <img src="screenshots/12_output_chart.png" alt="List report with a chart" style="width:100%;max-width:760px;display:block;margin:0 auto;border:1px solid #dee2e6;border-radius:10px"/>
+  </div>
+
+  <div style="padding:24px 12px 8px">
+    <h2 style="font-weight:800">In the Print menu, from forms and lists</h2>
+    <img src="screenshots/06_print_menu.png" alt="Excel reports in the Print menu of a sales order" style="width:100%;border:1px solid #dee2e6;border-radius:10px"/>
+    <img src="screenshots/08_list_print.png" alt="Printing a selection of sales orders" style="width:100%;margin-top:16px;border:1px solid #dee2e6;border-radius:10px"/>
+  </div>
+
+  <div style="padding:24px 12px 8px">
+    <h2 style="font-weight:800">Placeholder assistant and gallery</h2>
+    <p style="font-size:16px;line-height:1.7">Every field, loop and function of the model, ready to copy. Eight ready reports for sales, purchases, invoices, transfers, contacts and products.</p>
+    <img src="screenshots/03_placeholders.png" alt="Placeholder assistant" style="width:100%;border:1px solid #dee2e6;border-radius:10px"/>
+    <img src="screenshots/05_gallery.png" alt="Report gallery" style="width:100%;margin-top:16px;border:1px solid #dee2e6;border-radius:10px"/>
+  </div>
+
+  <div style="padding:24px 12px 8px">
+    <h2 style="font-weight:800">Placeholders at a glance</h2>
+    <table style="width:100%;border-collapse:collapse;font-size:15px">
+      <tr style="background:#1b264f;color:#fff"><th style="padding:8px;text-align:left">Write</th><th style="padding:8px;text-align:left">To get</th></tr>
+      <tr><td style="padding:8px;border-bottom:1px solid #eee"><code>{{ object.partner_id.city }}</code></td><td style="padding:8px;border-bottom:1px solid #eee">A field, also through relations</td></tr>
+      <tr><td style="padding:8px;border-bottom:1px solid #eee"><code>{{ for line in object.order_line }}</code></td><td style="padding:8px;border-bottom:1px solid #eee">One row per line (add <code>{{ endfor }}</code> for several rows)</td></tr>
+      <tr><td style="padding:8px;border-bottom:1px solid #eee"><code>{{ for rec in records }}</code></td><td style="padding:8px;border-bottom:1px solid #eee">One row per printed record</td></tr>
+      <tr><td style="padding:8px;border-bottom:1px solid #eee"><code>{{ sum:object.order_line.price_subtotal }}</code></td><td style="padding:8px;border-bottom:1px solid #eee">Sum, also avg, min, max and count</td></tr>
+      <tr><td style="padding:8px;border-bottom:1px solid #eee"><code>{{ line.product_id.image_128 | image:50 }}</code></td><td style="padding:8px;border-bottom:1px solid #eee">A picture, 50 pixels high</td></tr>
+      <tr><td style="padding:8px;border-bottom:1px solid #eee"><code>{{ object.date_order | date:%d.%m.%Y }}</code></td><td style="padding:8px;border-bottom:1px solid #eee">A date in your format</td></tr>
+      <tr><td style="padding:8px"><code>{{ company.logo | image:60 }}</code>, <code>{{ user.name }}</code>, <code>{{ today }}</code></td><td style="padding:8px">Company, user and print date</td></tr>
+    </table>
+  </div>
+
+  <div style="padding:24px 12px 8px">
+    <h2 style="font-weight:800">Questions</h2>
+    <p><b>Do I need Excel on the server?</b><br/>No. Files are produced by the module and open in Excel, LibreOffice, Google Sheets or Numbers.</p>
+    <p><b>Are numbers exported as text?</b><br/>No. Numbers, dates and amounts are real values with their format, ready for formulas.</p>
+    <p><b>Does it work with custom models?</b><br/>Yes. Any model can have Excel reports, including models added by other modules.</p>
+    <p><b>How many records can I print at once?</b><br/>Up to 5,000 in one report.</p>
+  </div>
+
+  <div style="text-align:center;padding:24px 12px 32px">
+    <h3 style="font-weight:800">Questions or a custom template?</h3>
+    <p style="font-size:16px">AXSync · <a href="mailto:hunain@axsync.com">hunain@axsync.com</a> · <a href="https://axsync.com">axsync.com</a></p>
+  </div>
+</section>
