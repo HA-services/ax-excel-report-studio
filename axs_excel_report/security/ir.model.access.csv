@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_axs_excel_template_user,axs.excel.template user,model_axs_excel_template,base.group_user,1,0,0,0
+access_axs_excel_template_manager,axs.excel.template manager,model_axs_excel_template,group_excel_manager,1,1,1,1
+access_axs_excel_template_line_user,axs.excel.template.line user,model_axs_excel_template_line,base.group_user,1,0,0,0
+access_axs_excel_template_line_manager,axs.excel.template.line manager,model_axs_excel_template_line,group_excel_manager,1,1,1,1
+access_axs_excel_print_wizard,axs.excel.print.wizard,model_axs_excel_print_wizard,base.group_user,1,1,1,1
+access_axs_excel_gallery_wizard,axs.excel.gallery.wizard,model_axs_excel_gallery_wizard,group_excel_manager,1,1,1,1
