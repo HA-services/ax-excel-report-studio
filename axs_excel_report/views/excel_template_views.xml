@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_axs_excel_template_form" model="ir.ui.view">
+        <field name="name">axs.excel.template.form</field>
+        <field name="model">axs.excel.template</field>
+        <field name="arch" type="xml">
+            <form string="Excel Report">
+                <header>
+                    <button name="action_test_print" type="object" string="Test Print" class="btn-primary" attrs="{'invisible': [('id', '=', False)]}"/>
+                    <button name="action_download_template" type="object" string="Download Template" attrs="{'invisible': [('id', '=', False)]}"/>
+                    <button name="action_use_as_file" type="object" string="Edit in Excel"
+                           
+                            confirm="The layout becomes an Excel file that you can download, change in Excel and upload again. Continue?" attrs="{'invisible': ['|', ('template_type', '!=', 'designer'), ('id', '=', False)]}"/>
+                </header>
+                <sheet>
+                    <div class="oe_button_box" name="button_box">
+                        <button class="oe_stat_button" icon="fa-file-excel-o" disabled="1">
+                            <field name="print_count" widget="statinfo" string="Printed"/>
+                        </button>
+                    </div>
+                    <widget name="web_ribbon" title="Archived" bg_color="bg-danger" attrs="{'invisible': [('active', '!=', False)]}"/>
+                    <field name="active" invisible="1"/>
+                    <div class="oe_title">
+                        <label for="name"/>
+                        <h1><field name="name" placeholder="e.g. Quotation (Excel)"/></h1>
+                    </div>
+                    <group>
+                        <group string="Report">
+                            <field name="model_id" options="{'no_create': True, 'no_open': True}"/>
+                            <field name="model_name" invisible="1"/>
+                            <field name="template_type" widget="radio" options="{'horizontal': true}"/>
+                            <field name="layout" widget="radio" attrs="{'invisible': [('template_type', '!=', 'designer')]}"/>
+                            <field name="output_name"/>
+                        </group>
+                        <group string="Menu">
+                            <field name="menu_location"/>
+                            <field name="view_types" attrs="{'invisible': [('menu_location', '=', 'none')]}"/>
+                            <field name="multi_mode" attrs="{'invisible': ['&amp;', ('layout', '=', 'list'), ('template_type', '=', 'designer')]}"/>
+                            <field name="ask_options"/>
+                            <field name="action_id" invisible="1"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Layout" name="designer" attrs="{'invisible': [('template_type', '!=', 'designer')]}">
+                            <group>
+                                <group>
+                                    <field name="title"/>
+                                    <field name="show_company"/>
+                                    <field name="show_logo" attrs="{'invisible': [('show_company', '=', False)]}"/>
+                                </group>
+                                <group>
+                                    <field name="accent_color" widget="color"/>
+                                    <field name="footer" placeholder="Optional note at the end of the sheet"/>
+                                </group>
+                            </group>
+                            <separator string="Fields" attrs="{'invisible': [('layout', '=', 'list')]}"/>
+                            <separator string="Columns" attrs="{'invisible': [('layout', '!=', 'list')]}"/>
+                            <field name="header_line_ids">
+                                <tree editable="bottom">
+                                    <field name="sequence" widget="handle"/>
+                                    <field name="section" column_invisible="True"/>
+                                    <field name="model_id" column_invisible="True"/>
+                                    <field name="field_id" options="{'no_create': True, 'no_open': True}"/>
+                                    <field name="name"/>
+                                    <field name="sub_path" placeholder="e.g. email"/>
+                                    <field name="total" attrs="{'column_invisible': [('parent.layout', '!=', 'list')]}"/>
+                                </tree>
+                            </field>
+                            <group attrs="{'invisible': [('layout', '=', 'list')]}">
+                                <field name="table_field_id" options="{'no_create': True, 'no_open': True}"/>
+                                <field name="table_model_id" invisible="1"/>
+                            </group>
+                            <field name="table_line_ids" attrs="{'invisible': ['|', ('layout', '=', 'list'), ('table_field_id', '=', False)]}">
+                                <tree editable="bottom">
+                                    <field name="sequence" widget="handle"/>
+                                    <field name="section" column_invisible="True"/>
+                                    <field name="model_id" column_invisible="True"/>
+                                    <field name="field_id" options="{'no_create': True, 'no_open': True}"/>
+                                    <field name="name"/>
+                                    <field name="sub_path" placeholder="e.g. default_code"/>
+                                    <field name="total"/>
+                                </tree>
+                            </field>
+                        </page>
+                        <page string="Excel File" name="file" attrs="{'invisible': [('template_type', '!=', 'file')]}">
+                            <group>
+                                <field name="template_file" filename="template_filename"/>
+                                <field name="template_filename" invisible="1"/>
+                            </group>
+                            <div class="o_axs_xlsx_help">
+                                <p>Write placeholders in the cells of your workbook, then upload it. Each cell keeps its
+                                    font, borders, colors and number format.</p>
+                                <ul>
+                                    <li><code>{{ object.name }}</code> a field of the printed record,
+                                        <code>{{ object.partner_id.email }}</code> a field of a related record.</li>
+                                    <li><code>{{ for line in object.order_line }}</code> anywhere in a row repeats the
+                                        row for each line; use <code>{{ line.price_subtotal }}</code> in that row. End a
+                                        block of several rows with <code>{{ endfor }}</code>.</li>
+                                    <li>Formulas such as <code>=SUM(F12:F12)</code> under a repeated row grow with it.</li>
+                                    <li><code>{{ object.image_128 | image:80 }}</code> inserts a picture 80 pixels high.</li>
+                                </ul>
+                                <p>The Placeholders tab lists every field of the model. Use Download Template to start
+                                    from the current file or from a designer layout.</p>
+                            </div>
+                        </page>
+                        <page string="Placeholders" name="placeholders">
+                            <field name="placeholder_help" readonly="1" nolabel="1"/>
+                        </page>
+                        <page string="Access" name="access">
+                            <group>
+                                <field name="company_ids" widget="many2many_tags" groups="base.group_multi_company"/>
+                                <field name="group_ids" widget="many2many_tags"/>
+                                <field name="sequence"/>
+                                <field name="description" placeholder="Internal notes"/>
+                            </group>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_axs_excel_template_tree" model="ir.ui.view">
+        <field name="name">axs.excel.template.tree</field>
+        <field name="model">axs.excel.template</field>
+        <field name="arch" type="xml">
+            <tree string="Excel Reports">
+                <field name="sequence" widget="handle"/>
+                <field name="name"/>
+                <field name="model_id"/>
+                <field name="template_type"/>
+                <field name="menu_location"/>
+                <field name="multi_mode"/>
+                <field name="print_count"/>
+                <field name="company_ids" widget="many2many_tags" groups="base.group_multi_company"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_axs_excel_template_search" model="ir.ui.view">
+        <field name="name">axs.excel.template.search</field>
+        <field name="model">axs.excel.template</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name"/>
+                <field name="model_id"/>
+                <filter name="designer" string="Designer" domain="[('template_type', '=', 'designer')]"/>
+                <filter name="file" string="Excel File" domain="[('template_type', '=', 'file')]"/>
+                <separator/>
+                <filter name="archived" string="Archived" domain="[('active', '=', False)]"/>
+                <group>
+                    <filter name="group_model" string="Model" context="{'group_by': 'model_id'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="action_axs_excel_template" model="ir.actions.act_window">
+        <field name="name">Excel Reports</field>
+        <field name="res_model">axs.excel.template</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Create your first Excel report</p>
+            <p>Pick ready-made reports in the Gallery, design one by choosing fields, or upload your own Excel
+                workbook with placeholders. Reports appear in the Print menu of the records.</p>
+        </field>
+    </record>
+
+    <!-- print dialog -->
+    <record id="view_axs_excel_print_wizard_form" model="ir.ui.view">
+        <field name="name">axs.excel.print.wizard.form</field>
+        <field name="model">axs.excel.print.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Excel Report">
+                <field name="res_model" invisible="1"/>
+                <field name="res_ids" invisible="1"/>
+                <field name="can_email" invisible="1"/>
+                <group>
+                    <group>
+                        <field name="template_id" options="{'no_create': True, 'no_open': True}"/>
+                        <field name="record_count" string="Records"/>
+                    </group>
+                    <group>
+                        <field name="output" widget="radio"/>
+                    </group>
+                </group>
+                <div class="text-muted small mb-2" attrs="{'invisible': ['|', ('can_email', '!=', False), ('output', '!=', 'email')]}">
+                    Email is available for one record of a document with a chatter.
+                </div>
+                <separator string="Preview (first record)"/>
+                <field name="preview" readonly="1" nolabel="1"/>
+                <footer>
+                    <button name="action_print" type="object" string="Generate" class="btn-primary"/>
+                    <button special="cancel" string="Cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <!-- gallery -->
+    <record id="view_axs_excel_gallery_wizard_form" model="ir.ui.view">
+        <field name="name">axs.excel.gallery.wizard.form</field>
+        <field name="model">axs.excel.gallery.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Report Gallery">
+                <p class="text-muted">Ready-made reports for the apps installed in this database. You can change
+                    everything after creating them.</p>
+                <group>
+                    <field name="template" widget="radio"/>
+                </group>
+                <footer>
+                    <button name="action_create" type="object" string="Create Report" class="btn-primary"/>
+                    <button special="cancel" string="Cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_axs_excel_gallery_wizard" model="ir.actions.act_window">
+        <field name="name">Report Gallery</field>
+        <field name="res_model">axs.excel.gallery.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+
+    <menuitem id="menu_excel_root" name="Excel Reports" sequence="95"
+              web_icon="axs_excel_report,static/description/icon.png" groups="group_excel_manager"/>
+    <menuitem id="menu_excel_templates" name="Reports" parent="menu_excel_root" sequence="1"
+              action="action_axs_excel_template"/>
+    <menuitem id="menu_excel_gallery" name="Gallery" parent="menu_excel_root" sequence="2"
+              action="action_axs_excel_gallery_wizard"/>
+</odoo>

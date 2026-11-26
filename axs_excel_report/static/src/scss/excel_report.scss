@@ -1,0 +1,30 @@
+// AXSync Excel Report Studio
+.o_axs_xlsx_preview {
+    max-height: 420px;
+    overflow: auto;
+    border: 1px solid var(--bs-border-color, #dee2e6);
+    border-radius: 6px;
+
+    table {
+        font-size: 0.8rem;
+        white-space: nowrap;
+    }
+    td {
+        min-width: 60px;
+        max-width: 260px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+.o_axs_placeholders {
+    code {
+        user-select: all;
+        white-space: nowrap;
+    }
+    h5 {
+        margin-top: 12px;
+    }
+}
+.o_axs_xlsx_help code {
+    user-select: all;
+}
