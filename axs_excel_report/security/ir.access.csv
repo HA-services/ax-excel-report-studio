@@ -1,0 +1,8 @@
+id,name,model_id,group_id/id,operation,domain
+access_axs_excel_template_user,axs.excel.template user,axs.excel.template,base.group_user,r,
+access_axs_excel_template_manager,axs.excel.template manager,axs.excel.template,group_excel_manager,crud,
+access_axs_excel_template_line_user,axs.excel.template.line user,axs.excel.template.line,base.group_user,r,
+access_axs_excel_template_line_manager,axs.excel.template.line manager,axs.excel.template.line,group_excel_manager,crud,
+access_axs_excel_print_wizard,axs.excel.print.wizard,axs.excel.print.wizard,base.group_user,crud,
+access_axs_excel_gallery_wizard,axs.excel.gallery.wizard,axs.excel.gallery.wizard,group_excel_manager,crud,
+rule_excel_template_company,Excel templates: multi-company,axs.excel.template,,crud,"['|', ('company_ids', '=', False), ('company_ids', 'in', company_ids)]"
